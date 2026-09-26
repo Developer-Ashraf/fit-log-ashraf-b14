@@ -7,7 +7,7 @@ import { BsArrowLeft } from 'react-icons/bs';
 
 const getSingleWorkout = async (id: string) => {
     try {
-        const res = await fetch(`https://api.abcz.workers.dev/api/fitlog/${id}`, {
+        const res = await fetch(`https://api.api-store.workers.dev/api/fitlog/${id}`, {
             cache: "no-store",
         });
         if (!res.ok) return null;
