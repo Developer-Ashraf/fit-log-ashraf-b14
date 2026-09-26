@@ -29,8 +29,7 @@ const workoutData: IWorkout[] = await getWorkouts();
         
       </main> */}
       <Hero></Hero>
-
-
+      
       <section id="library" className="scroll-mt-24 pt-4">
         <div className="mb-8">
           <h2 className="font-display text-2xl sm:text-3xl font-bold uppercase text-white tracking-wide">
@@ -41,7 +40,6 @@ const workoutData: IWorkout[] = await getWorkouts();
           </p>
         </div>
 
-        
         {workoutData.length === 0 ? (
           <div className="text-center py-16 text-zinc-500">
             No workouts found. Please check connection.
