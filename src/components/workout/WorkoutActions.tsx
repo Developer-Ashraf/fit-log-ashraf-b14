@@ -17,7 +17,7 @@ const WorkoutActions = ({ workout }: WorkoutActionsProps ) => {
 
   return (
     <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-      {/* Primary: Add to Today's Plan */}
+      
       <button
         onClick={() => addToTodayPlan(workout)}
         className={`flex-1 flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all shadow-md cursor-pointer ${
@@ -30,7 +30,6 @@ const WorkoutActions = ({ workout }: WorkoutActionsProps ) => {
         <span>{inPlan ? "In Today's Plan" : "Add to today's plan"}</span>
       </button>
 
-      {/* Secondary: Save for later */}
       <button
         onClick={() => addToSavedPlan(workout)}
         className={`flex-1 flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wide border transition-all cursor-pointer ${
