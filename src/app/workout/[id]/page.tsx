@@ -56,7 +56,6 @@ const WorkoutDetailPage = async ({ params }:PageProps ) => {
                 <span>Back to Workouts</span>
             </Link>
 
-            
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
                 
                 <div className="lg:col-span-6 w-full">
@@ -72,7 +71,6 @@ const WorkoutDetailPage = async ({ params }:PageProps ) => {
                     </div>
                 </div>
 
-               
                 <div className="lg:col-span-6 flex flex-col">
                     <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase text-white tracking-wide">
                         {workout.name}
@@ -82,7 +80,6 @@ const WorkoutDetailPage = async ({ params }:PageProps ) => {
                         {workout.description}
                     </p>
 
-                    
                     <div className="flex flex-wrap gap-2 mb-6">
                         {workout.muscleGroups.map((tag: string, ind: number) => (
                             <span
@@ -94,7 +91,6 @@ const WorkoutDetailPage = async ({ params }:PageProps ) => {
                         ))}
                     </div>
 
-                    
                     <div className="rounded-2xl bg-[#12141a] border border-zinc-800/90 overflow-hidden divide-y divide-zinc-800/70 mb-8 text-sm">
                         {[
                             ["EQUIPMENT", workout.equipment],
