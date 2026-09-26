@@ -35,7 +35,6 @@ const Hero = () => {
                     </button>
                 </div>
 
-                
                 <div className="lg:col-span-5 flex justify-center lg:justify-end">
                     <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
                         <Image
@@ -47,7 +46,6 @@ const Hero = () => {
                         />
                     </div>
                 </div>
-
             </div>
         </section>
     );
