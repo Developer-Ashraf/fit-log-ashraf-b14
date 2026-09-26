@@ -92,7 +92,6 @@ export const PlanProvider: React.FC<{ children: React.ReactNode }> = ({ children
     });
   };
 
-  // Remove from Saved Plan
   const removeFromSavedPlan = (id: number) => {
     const item = savedPlan.find((w) => w.id === id);
     const updated = savedPlan.filter((w) => w.id !== id);
@@ -120,12 +119,12 @@ export const PlanProvider: React.FC<{ children: React.ReactNode }> = ({ children
     localStorage.setItem("fitlog_completed_ids", JSON.stringify(updated));
   };
 
-  // Helper Functions
+  
   const isItemInTodayPlan = (id: number) => todayPlan.some((w) => w.id === id);
   const isItemInSavedPlan = (id: number) => savedPlan.some((w) => w.id === id);
   const isItemCompleted = (id: number) => completedIds.includes(id);
 
-  // Live Metrics Calculation
+  
   const totalExercises = todayPlan.length;
   const totalMinutes = todayPlan.reduce((acc, curr) => acc + (Number(curr.duration) || 0), 0);
   const totalCalories = todayPlan.reduce((acc, curr) => acc + (Number(curr.caloriesBurned) || 0), 0);
